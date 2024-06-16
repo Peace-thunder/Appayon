@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="x-icon" href="images/Appayon1.ico">
+    <title>
+        Appayon - Helping People in Need
+    </title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <a href="#" onclick="showSection('home')"><img src="images/Appayon1.png" alt="Appayon Logo"></a>
+        
+        <h1>Appayon</h1>
+        <p>Helping People in Need by Providing Food</p>
+    </header>
+    
+    <nav>
+        <a href="#" onclick="showSection('home')">Home</a>
+        <a href="#" onclick="showSection('about')">About</a>
+        <a href="#" onclick="showSection('services')">Services</a>
+        <a href="#" onclick="showSection('photos')">Photo Gallery</a>
+        <a href="#" onclick="showSection('comments')">Comments</a>
+        <a href="#" onclick="showSection('contact')">Contact</a>
+        <label class="switch">
+            <input type="checkbox" id="modeToggle">
+            <span class="slider round"></span>
+        </label>
+    </nav>
+    <div class="container">
+        <section id="home">
+            <h2 class="animated-text" id="animatedText">Welcome To Appayon</h2>
+            <p>We are dedicated to helping people in need by providing food. Our mission is to ensure that no one goes hungry.</p>
+        </section>
+        <section id="about" class="hidden">
+            <h2>About Us</h2>
+            <p>Welcome to Appayon, where our mission is rooted in compassion and action. As a dedicated non-profit organization, we are committed to alleviating hunger and nourishing communities in need. Through our efficient distribution network, we provide essential food supplies to those facing food insecurity, ensuring no one goes to bed hungry. At Appayon, we believe in the transformative power of food not only to sustain but also to empower individuals and families towards a brighter future. Join us in our journey to make a meaningful difference, one meal at a time. Together, we can build a world where hunger is a thing of the past.</p>
+        </section>
+        <section id="services" class="hidden">
+            <h2>Our Services</h2>
+            <div class="services">
+                <h3>Food Distribution</h3>
+                <p>We organize regular food drives and distribution events to provide meals to individuals and families in need.</p>
+            </div>
+            <div class="services">
+                <h3>Community Kitchens</h3>
+                <p>Our community kitchens offer hot meals to anyone who needs them, fostering a sense of community and support.</p>
+            </div>
+            <div class="services">
+                <h3>Volunteer Opportunities</h3>
+                <p>Join us as a volunteer to help with food collection, preparation, and distribution. Your support makes a big difference!</p>
+            </div>
+        </section>
+        <section id="photos" class="hidden">
+            <h2>Photo Gallery</h2>
+            <div class="photo-gallery">
+                <img src="images/img1.jpeg" alt="Appayon Event" class="gallery-photo">
+                <img src="images/img2.jpeg" alt="Appayon Event" class="gallery-photo">
+                <img src="images/img3.jpeg" alt="Appayon Event" class="gallery-photo">
+               
+            </div>
+        </section>
+        <section id="comments" class="hidden">
+            <h2>Leave a Comment</h2>
+            <form id="commentForm">
+                <div>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div>
+                    <label for="comment">Comment:</label>
+                    <textarea id="comment" name="comment" required></textarea>
+                </div>
+                <button type="submit">Submit</button>
+            </form>
+            <p id="commentMessage" style="color: green; display: none;">Thank you for your comment!</p>
+            <div id="commentList"></div>
+        </section>
+        <section id="contact" class="hidden">
+            <h2>Contact Us</h2>
+            <p>If you have any questions or would like to get involved, please reach out to us:</p>
+            <div class="contact">
+                <h3>Email</h3>
+                <a href="appayon.bd@gmail.com">appayon.bd@gmail.com</a>
+            </div>
+            <div class="contact">
+                <h3>Phone</h3>
+                <p>(880) 1611363370 </p>
+            </div>
+           
+        </section>
+    </div>
+    <footer>
+        <p>&copy; 2024 Appayon. All rights reserved.</p>
+        <div class="social-links">
+            <a href="https://www.facebook.com" target="_blank" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/appa_yon?igsh=dHdrNmFwajMzaDAx&utm_source=qr" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>          
+        </div>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
